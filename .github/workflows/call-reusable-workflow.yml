@@ -6,9 +6,6 @@ on:
   
 jobs:
   greet_user:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Say Hello to Tom
-        uses: rodmhgl/reusable/.github/workflows/reusable-workflow.yml@main
-        with:
-          username: Tom
+      uses: rodmhgl/reusable/.github/workflows/reusable-workflow.yml@main
+      with:
+        username: Tom
